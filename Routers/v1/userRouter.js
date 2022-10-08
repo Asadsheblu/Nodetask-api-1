@@ -3,7 +3,7 @@ const userController = require("../../controllers/v1/user.controller")
 const router = express.Router()
 
 router.route("/all").get(userController.getRandomuser)
-router.route("/random").get(userController.getRandomUser)
+router.route("/random").get(userController.getRandomuser)
 
 router.route("/save").post(userController.userSaved)
 
