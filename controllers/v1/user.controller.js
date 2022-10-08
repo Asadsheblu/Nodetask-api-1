@@ -1,8 +1,8 @@
-let user=require("../../user.json")
+let users=require("../../user.json")
 
 module.exports.getRandomuser=(req,res)=>{
-    let randomuser=Math.floor((Math.random()*user.length)+1)
-    let getRandomUser = users.find(user => user.id == randomUser)
+    let randomuser=Math.floor((Math.random()*users.length)+1)
+    let getRandomUser = users.find(user => user.id == randomuser)
     res.send(getRandomUser)
 }
 module.exports.getAllUser = (req, res) => {
